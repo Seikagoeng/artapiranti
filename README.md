@@ -7,15 +7,10 @@
 > NOTE: Compress images manually
 
 ``` bash
+# install dependencies
+npm install --save-dev
 # 1. generate rev-manifest.json config file
 gulp revs
 # 2. build
 gulp build
-```
-
-### Development Build Setup
-
-``` bash
-# install dependencies
-npm install --save-dev
 ```
