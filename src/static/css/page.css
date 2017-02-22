@@ -151,6 +151,10 @@ body {
   vertical-align: top;
 }
 
+.page-about article[lang="zh"] {
+  line-height: 2;
+}
+
 .page-about .left-image {
   opacity: 0;
   animation: moveRight .5s cubic-bezier(.83, 1.68, .26, .85) .3s forwards;
