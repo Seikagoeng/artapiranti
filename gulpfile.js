@@ -37,7 +37,8 @@ const paths = {
       'src/static/css/*.*'
     ],
     img: 'src/static/img/*.*',
-    font: 'src/static/fonts/*.*'
+    font: 'src/static/fonts/*.*',
+    lang: 'src/static/lang/*.*'
   },
   dist: {
     root: 'dist',
@@ -152,7 +153,7 @@ gulp.task('rev-4-html', () => {
 */
 
 gulp.task('transfer-resource', () => {
-  return gulp.src([paths.src.font, paths.src.img], { base: paths.src.root })
+  return gulp.src([paths.src.font, paths.src.img, paths.src.lang], { base: paths.src.root })
     .pipe(rev())
     .pipe(gulp.dest(paths.dist.root))
 })
