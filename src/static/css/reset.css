@@ -325,8 +325,16 @@ a {
 .section:nth-child(3) {
   background: linear-gradient(#35314a, #162136);
 }
-
 .section:nth-child(4) {
+  background: linear-gradient(#162136, #030406);
+}
+.section:nth-child(5) {
+  background: linear-gradient(#F8F7F7, #F8F9FA);
+}
+.section:nth-child(6) {
+  background: linear-gradient(#162136, #030406);
+}
+.section:nth-child(7) {
   background: linear-gradient(#162136, #030406);
 }
 
@@ -340,7 +348,7 @@ a {
 }
 
 .fp-controlArrow.fp-prev {
-  background-image: url(../img/LEFT.png);
+  background-image: url(../img/left.png);
   left: -100px;
 }
 
