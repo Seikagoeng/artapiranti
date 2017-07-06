@@ -578,16 +578,17 @@ article {
 
 /*---page career begin---*/
 .career-container{
-  min-width: 1000px;
-  height: 1000px;
+  width: 1100px;
+  height:1000px;
   margin: 0 auto;
-  border: 1px solid red;
+  position: relative;
 }
+
 .career-head{
-  width: 1000px;
-  height: 100px;
+  width: 83%;
   margin: 0 auto;
   text-align: right;
+  padding-top: 60px;
 }
 .career-head h1{
   font-family: Roboto;
@@ -604,15 +605,21 @@ article {
   font-weight: bold;
 }
 .page-career .left-text{
-  width: 510px;
+  display: inline-block;
+  width: 500px;
   height: 500px;
-  text-align: left;
-  border: 1px solid black;
+  overflow: hidden;
+  margin-top: 22px;
+  margin-left: -14px;
+  margin-right: 32px;
 }
 .page-career .left-text>p,
 .page-career .right-text>p{
   font-family: ArialMT;
   color: #ffffff;
+}
+.mark{
+  margin-right: 6px;
 }
 .career-r{
   font-family: Muli;
@@ -620,17 +627,40 @@ article {
   font-weight: 900;
   letter-spacing: 0px;
   color: #32eece;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 .divider{
   display: inline-block;
+  width: 3px;
+  height: 401px;
+  background: white;
+  position: absolute;
+  top: 180px;
+
 }
 .page-career .right-text{
-  width: 510px;
+  display: inline-block;
+  width: 450px;
   height: 500px;
   text-align: left;
-  border: 1px solid black;
+  overflow: hidden;
+  margin-left: 43px;
 
+}
+.newRe{
+  margin-top: 28px;
+}
+.right-p{
+  margin-top: 38px;
+}
+.sendto{
+  margin-top: 50px;
+}
+.sendto p:nth-child(3){
+  margin-top: 20px;
+}
+.sendto p:nth-child(3) span{
+  color: #32eece;
 }
 
 

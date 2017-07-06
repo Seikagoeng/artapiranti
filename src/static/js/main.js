@@ -8,7 +8,7 @@ $(function () {
     verticalCentered: true,
     resize: true,
     easing: 'easeInQuart',
-    anchors: ['about', 'product', 'career','timeline', 'blog','contact'],
+    anchors: ['about', 'product', 'career','timeline', 'blog','contact','contact2'],
     scrollingSpeed: 1000,
     navigation: true,
     // slidesNavigation: true,
