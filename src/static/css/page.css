@@ -513,37 +513,226 @@ article {
   line-height: 0.67;
   color: #ffffff;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
-.timeaxis{
+
+/*--timeaxis-top begin--*/
+.timeaxis-top ul li,
+.timeaxis-bottom ul li{
+  float: left;
+  margin-right: 10px;
 }
-.timeaxis-info-1{
-  width: 130px;
+.timeaxis-top{
+  height: 105px;
+}
+/*.timeaxis-figure{
+  width: 20px;
+}*/
+
+.timeaxis-bg1{
+  width: 110px;
+  height: 92px;
+  background: url(../img/Bubblesmall.png) no-repeat;
+}
+.timeaxis-bg2{
+  width: 200px;
+  height: 92px;
+  background: url(../img/Bubblemid.png) no-repeat;
+}
+.timeaxis-bg3{
+  width: 250px;
+  height: 92px;
+  background: url(../img/Bubblebig.png) no-repeat;
+}
+.timeaxis-bg4{
+  background: url(../img/Bubble1m.png) no-repeat;
+}
+.timeaxis-bgfigure1{
+  width: 45px;
   height: 55px;
-  border-radius: 10px;
-  background:url(../img/BubAble3) left top no-repeat;
+  background: url(../img/staff1.png) no-repeat;
+}
+.timeaxis-bgfigure2{
+  width: 45px;
+  height: 55px;
+  background: url(../img/staff2.png) no-repeat;
+}
+.timeaxis-bg2 div{
+  display: inline-block;
+  text-align: left;
+  width: 91px;
+  padding: 4px;
+  font-family: Calibre;
+  font-size: 10px;
+}
+.timeaxis-bg1 div img,
+.timeaxis-bg2 div img,
+.timeaxis-bg3 div img,
+.timeaxis-bg4 div img{
+  height: 33px;
+}
+.timeaxis-bg1 div{
+  width: 104px;
+  text-align: left;
+  font-family: Calibre;
+  font-size: 10px;
+  padding: 4px 0px 4px 9px;
+}
+.timeaxis-bgfigure1 div{
+  position: relative;
+  width: 160px;
+}
+.timeaxis-bgfigure1 div img{
+  width: 40px;
+  position: absolute;
+  left: 3px;
+  top: 2px;
+}
+/*--timeaxis-top end  --*/
+
+/*--timeaxis-middle begin--*/
+.timeaxis-middle ul li p{
+  text-align: right;
+}
+.future{
+  width: 143px;
+  height: 42px;
+  font-family: Calibre;
+  font-size: 14px;
+  text-align: left;
+  color: #ffffff;
+}
+.future span{
+  font-family: Calibre;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  color: #ffffff;
 }
 .timeaxis-middle{
-  width: 1300px;
+  width: 1000px;
   height: 2px;
-  margin: 0 auto;
   background: #ffffff;
-}
-.timeaxis-middle ul li{
+  position: relative;
   float: right;
 }
-.timeaxis-middle ul li:last-of-type{
+.timeaxis-middle ul li{
   float: left;
+  margin-left: 30px;
 }
+.timeaxis-middle ul li:first-of-type{
+  position: absolute;
+  left: -195px;
+  top: -44px;
+}
+.timeaxis-middle ul li:nth-child(2){
+  position: absolute;
+  left: -43px;
+  top: -8px;
+}
+.timeaxis-middle ul li:nth-child(3){
+  position: absolute;
+  left: 34px;
+  top: -8px;
+}
+.timeaxis-middle ul li:nth-child(4){
+  position: absolute;
+  left: 103px;
+  top: -8px;
+}
+.timeaxis-middle ul li:nth-child(5){
+  position: absolute;
+  left: 173px;
+  top: -8px;
+}
+.timeaxis-middle ul li:nth-child(6){
+  position: absolute;
+  left: 243px;
+  top: -8px;
+}
+.timeaxis-middle ul li:nth-child(7){
+  position: absolute;
+  left: 313px;
+  top: -8px;
+}
+.timeaxis-middle ul li:nth-child(8){
+  position: absolute;
+  left: 383px;
+  top: -8px;
+}
+.timeaxis-middle ul li:nth-child(9){
+  position: absolute;
+  left: 453px;
+  top: -8px;
+}
+.timeaxis-middle ul li:nth-child(10){
+  position: absolute;
+  left: 520px;
+  top: -8px;
+}
+.timeaxis-middle ul li:nth-child(11){
+  position: absolute;
+  left: 590px;
+  top: -8px;
+}
+.timeaxis-middle ul li:nth-child(12){
+  position: absolute;
+  left: 660px;
+  top: -8px;
+}
+.timeaxis-middle ul li:nth-child(13){
+  position: absolute;
+  left: 730px;
+  top: -8px;
+}
+
 .timeaxis-middle ul li:first-of-type>img,
 .timeaxis-middle ul li:last-of-type>img{
   width: 20px;
 }
 .timeaxis-middle ul li img{
   width: 14px;
-  margin-left: 31px;
-  position: relative;
-  bottom: 7px;
 }
+.timeaxis-middle .dotbig{
+  width: 20px;
+}
+/*--timeaxis-middle end  --*/
+
+/*--timeaxis bottom begin--*/
+.timeaxis-bgfigure2 div{
+  width: 160px;
+  position: relative;
+}
+.timeaxis-info-b2{
+  float: left;
+  margin-right: 40px;
+}
+.timeaxis-info-b2 div p{
+  position: relative;
+  top: 50px;
+}
+.timeaxis-bgfigure2 div img{
+  width: 40px;
+  position: absolute;
+  left: 3px;
+  top: 14px;
+}
+.timeaxis-bgfigure1 div p{
+  text-align: left;
+  margin-left: 50px;
+  font-family: Calibre;
+  font-size: 10px;
+  text-align: left;
+}
+.timeaxis-bg3 div{
+  display: inline-block;
+  text-align: left;
+  width: 116px;
+  padding: 4px;
+  font-family: Calibre;
+  font-size: 10px;
+}
+/*--timeaxis bottom end  --*/
 
 /*---page timeline end---*/
 /*---page blog begin---*/
