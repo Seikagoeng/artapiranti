@@ -317,16 +317,14 @@ a {
 .section:nth-child(1) {
   background: linear-gradient(#030406, #131a27);
 }
-
 .section:nth-child(2) {
   background: linear-gradient(#131a27, #20293A);
 }
-
 .section:nth-child(3) {
   background: linear-gradient(#20293A,#2F2C3E);
 }
 .section:nth-child(4) {
-  background:#2F2C3E url(../img/Moon.png) left 400px no-repeat;
+  background: linear-gradient(#2F2C3E,#413E51);
 }
 .section:nth-child(5) {
   background: linear-gradient(#413E51,#2F2C3E);
