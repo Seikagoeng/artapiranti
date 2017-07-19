@@ -503,35 +503,35 @@ article {
 /* page-career end */
 
 /*---page timeline begin---*/
-.page-timeline .wrap{/*
+.page-timeline .wrap{
+  height: 100%;
   background:url(../img/Moon.png) center bottom no-repeat;
-  background-size: 1058px 167px;*/
+  background-size: 100% 170px;
 }
-#timecontainer{
+.timecontainer{
   width: 1233px;
-  height: 300px;
+  height: 100%;
   margin: 0 auto;
   overflow: hidden;
+  background: url(../img/Stars.png) no-repeat;
+  background-size: contain;
 }
 #timeaxis{
   position: relative;
   width: 2074px;
-  height: 250px;
-  margin-left: 227px;/*
-  left: -1203px;*/
-
+  height: 248px;
+  margin-left: 227px;
 }
-.page-timeline h1{
+.timecontainer>.headline{
   width: 147px;
   height: 24px;
   font-family: Arial-MT;
   font-size: 36px;
   font-weight: bold;
   font-style: italic;
-  line-height: f0.67;
-  color: #ffffff;
-  margin: 0 auto;
-  margin-bottom: 50px;
+  line-height: 0.67;
+  color: white;
+  margin: 98px auto 79px;
 }
 .timeaxis-bg1{
   width: 110px;
@@ -619,7 +619,7 @@ article {
   top: 2px;
 }
 
-#schedule{
+.schedule{
   left: 8px;
   top: 73px;
   width: 83px;
@@ -976,9 +976,7 @@ top: 53px;
 #scrollbar{
   width: 200px;
   height: 6px;
-  opacity: 0.3;
   margin: 0 auto;
-  margin-top: 40px;
 }
 #scrollbar a{
   display: block;
@@ -990,10 +988,16 @@ top: 53px;
   border-top-left-radius:4.5px;
   border-bottom-left-radius:4.5px;
 }
+#scrollbar a:first-of-type:hover{
+  opacity: .5;
+}
 #scrollbar a:last-of-type{
   float: right;
   border-bottom-right-radius:4.5px;
   border-top-right-radius:4.5px;
+}
+#scrollbar a:last-of-type:hover{
+  opacity: .5;
 }
 .scrollcolor1{
   background: #32eece;

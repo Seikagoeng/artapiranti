@@ -106,20 +106,6 @@
           </article>
         </div>
       </main>
-      <footer class="founder-wrap dn">
-        <ul class="founder clearfix">
-          <li>
-            <img alt=""><!-- data-src="static/img/photokos.png" -->
-            <p><em>KOSASIH</em></p>
-            <p><em>CO-FOUNDER</em></p>
-          </li>
-          <li>
-            <img alt=""><!-- data-src="static/img/photosteve.png" -->
-            <p><em>STEVE YAO</em></p>
-            <p><em>CO-FOUNDER</em></p>
-          </li>
-        </ul>
-      </footer>
     </div>
   </div>
   <div class="section page-product">
@@ -622,14 +608,14 @@
     </div>
     <div class="section page-timeline">
       <div class="wrap">
-        <h1 class="headline"><em lang="en">Timeline </em></h1>
-        <div  id="timecontainer">
+        <div class="timecontainer">
+          <h1 class="headline"><em lang="en">Timeline </em></h1>
           <div id="timeaxis">
             <div class="timeaxis-top">
               <ul>
                 <li>
-                  <div id="schedule">
-                    June, 22, 2017
+                  <div class="schedule">
+                    <span id="schedule-month"></span>, <span id="schedule-date"></span>, <span id="schedule-year"></span>
                   </div>
                   <div class="timeaxis-info-1 timeaxis-bg2">
                     <div>
@@ -652,7 +638,7 @@
                 <li>
                   <div class="timeaxis-info-3 timeaxis-bgfigure1">
                     <div>
-                      <img src="static/img/face2.png">
+                      <img src="static/img/2.png">
                       <p>Fhaldini<br>June, 02, 2017</p>
                     </div>
                   </div>
@@ -707,7 +693,7 @@
                 <li>
                   <div class="timeaxis-info-9 timeaxis-bgfigure1">
                     <div>
-                      <img src="static/img/face2.png">
+                      <img src="static/img/1.png">
                       <p>Vivi Suyanti<br>Finance<br>Feb, 06, 2017</p>
                     </div>
                   </div>
@@ -715,7 +701,7 @@
                 <li>
                   <div class="timeaxis-info-10 timeaxis-bgfigure1">
                     <div>
-                      <img src="static/img/face2.png">
+                      <img src="static/img/9.png">
                       <p>Sena Rizky<br>UI/UX<br>Feb, 06, 2017</p>
                     </div>
                   </div>
@@ -723,7 +709,7 @@
                 <li>
                   <div class="timeaxis-info-11 timeaxis-bgfigure3">
                     <div>
-                      <img src="../src/static/img/face2.png" alt="">
+                      <img src="../src/static/img/6.png" alt="">
                       <img src="../src/static/img/Idn.png">
                     </div>
                   </div>
@@ -731,7 +717,7 @@
                 <li>
                   <div class="timeaxis-info-12 timeaxis-bgfigure3">
                     <div>
-                      <img src="../src/static/img/face2.png" alt="">
+                      <img src="../src/static/img/8.png" alt="">
                       <img src="../src/static/img/cn.png">
                     </div>
                   </div>
@@ -785,21 +771,21 @@
                 <li>
                   <div class="timeaxis-info-b2 b2-1 timeaxis-bgfigure2">
                     <div>
-                      <img src="static/img/face2.png">
+                      <img src="static/img/3.png">
                       <p>Wisnu<br>July, 03, 2017</p>
                     </div>
                   </div>
                   <div class="b2-divider1"></div>
                   <div class="timeaxis-info-b2 b2-2 timeaxis-bgfigure1">
                     <div>
-                      <img src="static/img/face2.png">
+                      <img src="static/img/4.png">
                       <p>Tony<br>July, 03, 2017</p>
                     </div>
                   </div>
                   <div class="b2-divider2"></div>
                   <div class="timeaxis-info-b2 b2-3 timeaxis-bgfigure1">
                     <div>
-                      <img src="static/img/face2.png">
+                      <img src="static/img/5.png">
                       <p>Peter<br>July, 03, 2017</p>
                     </div>
                   </div>
@@ -823,7 +809,7 @@
                   <li>
                     <div class="timeaxis-info-b5 timeaxis-bgfigure2">
                       <div>
-                        <img src="static/img/face2.png">
+                        <img src="static/img/7.png">
                         <p>Renshan Lu<br>April, 15, 2017</p>
                       </div>
                     </div>
@@ -847,7 +833,7 @@
                   <li>
                     <div class="timeaxis-info-b8 timeaxis-bg4">
                       <div>
-                        <img src="static/img/bluepay.png">
+                        <img src="static/img/logo-bp-wht-02.png">
                         <p>Bluepay<br>April, 08, 2017</p>
                       </div>
                     </div>
@@ -855,7 +841,7 @@
                   <li>
                     <div class="timeaxis-info-b9 timeaxis-bgfigure2">
                       <div>
-                        <img src="static/img/face2.png">
+                        <img src="static/img/10.png">
                         <p>lker<br>Feb, 07, 2017</p>
                       </div>
                     </div>
@@ -871,7 +857,7 @@
                   <li>
                     <div class="timeaxis-info-b11 timeaxis-bgfigure2">
                       <div>
-                        <img src="static/img/face2.png">
+                        <img src="static/img/11.png">
                         <p>Doddy<br>Android Dev.<br>Feb, 06, 2017</p>
                       </div>
                     </div>
@@ -907,7 +893,7 @@
             <div class="blog-head">
               <p><em lang="en">From Our Blog</em></p>
               <h1 class="headline">CREATING A BUTTON SYSTEM WITH NESTED SYMBOL ON SKETCH </h1 >
-              <img src="../src/static/img/face.png">
+              <img src="../src/static/img/9.png">
               <p lang="en"><span>Sena Rizky</span> wrote this on November 23, 2016 / <span>No Comment</span></p>
             </div>
             <div class="blog-content">
@@ -923,7 +909,7 @@
           <div class="blog-details">
             <div class="details-head">
               <div class="head-des">
-                <img src="../src/static/img/face.png">
+                <img src="../src/static/img/9.png">
                 <p>
                   <span>Sena Rizky</span> wrote this on November 23, 2016
                   <span>18 comments <img src="../src/static/img/ic_heart.png"> 237 &nbsp;<img src="../src/static/img/ic_visibility.png"> 1267</span>
@@ -1173,7 +1159,6 @@
   <!-- build:js -->
   <script src="static/js/main.js"></script>
   <!-- endbuild -->
-  <script src="static/js/timeaxis.js"></script>
   <script>
     var lang = new Lang();
 
@@ -1196,7 +1181,7 @@
           lang.change(browserLang);
         }, 30);
       }
-    }
+    };
   </script>
 </body>
 
