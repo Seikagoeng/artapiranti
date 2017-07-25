@@ -15,7 +15,7 @@ $(function() {
     // slidesNavPosition: 'bottom',
     menu: '.nav',
     fixedElements: '.header, .footer',
-    scrollOverflow: true,
+    scrollOverflow: false,
     lazyloading: true,
     afterLoad: function(anchorLink, index) {
       $('.section').removeClass('pageAnim');
@@ -23,7 +23,8 @@ $(function() {
     },
     onLeave: function(index, nextIndex, direction) {
       $('.slide').removeClass('slideAnim');
-      if (nextIndex === 2 || nextIndex === 4) {
+      if ([2, 3, 5, 7].indexOf(nextIndex) !== -1) {
+        // todo
         $('.slide.active').eq(nextIndex === 2 ? 0 : 1).addClass('slideAnim');
       }
     },
@@ -65,4 +66,6 @@ $(function() {
     $("#btn1").addClass("scrollcolor2");
     $("#timeaxis").animate({left: '-1222px'}, 1000);
   });
+
+
 });
