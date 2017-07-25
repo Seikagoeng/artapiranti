@@ -11,7 +11,7 @@ $(function() {
     anchors: ['about', 'product', 'career', 'timeline', 'blog', 'parters', 'staffs', 'contact'],
     scrollingSpeed: 1000,
     navigation: true,
-    // slidesNavigation: true,
+    // slidesNavigation: false,
     // slidesNavPosition: 'bottom',
     menu: '.nav',
     fixedElements: '.header, .footer',
@@ -67,5 +67,10 @@ $(function() {
     $("#timeaxis").animate({left: '-1222px'}, 1000);
   });
 
-
+  $("#allstaff").click(function () {
+      $.fn.fullpage.moveSlideLeft();
+  })
+  $("#myBlog").click(function () {
+      $.fn.fullpage.moveTo(5,0);
+  })
 });

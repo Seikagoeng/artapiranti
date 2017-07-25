@@ -193,8 +193,7 @@ body {
   text-align: right;
 }
 
-.left-text,
-.right-text {
+.left-text,.right-text,.divider {
   display: inline-block;
 }
 
@@ -411,20 +410,14 @@ article {
   color: #32eece;
   line-height: 40px;
 }
-.career-container{
-  width: 1100px;
-  height:1000px;
-  margin: 0 auto;
-  position: relative;
-}
 .career-head{
   width: 83%;
-  margin: 0 auto;
   text-align: right;
-  padding-top: 60px;
+  margin: 0 auto;
+  margin-bottom: 28px;
 }
 .career-head h1{
-  height: 57px;
+  height: 50px;
   font-family: Roboto;
   font-size: 48px;
   font-weight: bold;
@@ -442,51 +435,61 @@ article {
   font-weight: bold;
 }
 .page-career .left-text{
-  display: inline-block;
-  width: 500px;
-  height: 500px;
-  overflow: hidden;
-  margin-top: 22px;
-  margin-left: -14px;
+  width: 510px;
+  vertical-align: top;
   margin-right: 32px;
 }
 .page-career .left-text>p,
 .page-career .right-text>p{
-  width: 510px;
   font-family: Arial;
   font-size: 17px;
   text-align: left;
   color: #ffffff;
 }
-.mark{
-  margin-right: 6px;
+.page-career .left-text p:before,
+.page-career .right-text p:before{
+  content: "•";
+  margin-right: 12px;
 }
 .career-r{
   font-family: Muli;
   font-size: 27px;
   font-weight: 900;
   color: #32eece;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 
 }
 .career-r-2{
   margin-bottom: 19px;
 }
 .divider{
-  display: inline-block;
   width: 3px;
-  height: 398px;
+  height: 320px;
   background: white;
-  position: absolute;
-  top: 180px;
-
+}
+.pro-divider{
+  height: 332px;
+}
+.senior-divider{
+  height: 390px;
+}
+.junior-divider{
+  height: 350px;
+}
+.ui-divider{
+  height: 395px;
+}
+.ios-divider{
+  height: 312px;
+}
+.Finance-divider{
+  height: 355px;
 }
 .page-career .right-text{
   display: inline-block;
   width: 450px;
-  height: 500px;
+  vertical-align: top;
   text-align: left;
-  overflow: hidden;
   margin-left: 43px;
 
 }
@@ -494,16 +497,16 @@ article {
   margin-top: 30px;
 }
 .right-p{
-  margin-top: 38px;
+  margin-top: 33px;
 }
 .right-p2{
   margin-top: 13px;
 }
 .sendto{
-  margin-top: 50px;
+  margin-top: 35px;
 }
 .sendto2{
-  margin-top: 29px;
+  margin-top: 22px;
 }
 .sendto p:nth-child(3){
   margin-top: 20px;
@@ -1109,12 +1112,15 @@ top: 53px;
   margin-left: 82px;
   margin-top: 52px;
 }
-.details-head .head-des{
+.head-des{
   width: 900px;
   margin: 0 auto;
   text-align: left;
   padding-top: 15px;
   margin-bottom: 10px;
+}
+.head-des img:hover{
+  opacity: .5;
 }
 .details-head .head-des img{
   width: 60px;
@@ -1327,7 +1333,7 @@ top: 53px;
   color: #4a4a4a;
   margin: 0 auto;
 }
-.myBlog{
+#myBlog{
   display: inline-block;
   width: 112px;
   height: 40px;
@@ -1338,7 +1344,7 @@ top: 53px;
   color: #ffffff;
   margin-bottom: 10px;
 }
-.myBlog:hover{
+#myBlog:hover{
   opacity: .5;
 }
 .profile-divider{
@@ -1381,7 +1387,7 @@ top: 53px;
 .profile-des li div p:nth-child(4){
     font-size: 9px;
 }*/
-.allstaff{
+#allstaff{
   width: 160px;
   height: 33px;
   font-family: Arial;
@@ -1390,7 +1396,7 @@ top: 53px;
   line-height: 125px;
   color: #4a4a4a;
 }
-.allstaff:hover{
+#allstaff:hover{
   opacity: 0.5;
 }
 /*--profile end--*/
@@ -1607,6 +1613,12 @@ top: 53px;
   .product-10-1 {
     width: 515px;
   }
+  .page-career .left-text{
+    width: 450px;
+  }
+  .page-career .right-text{
+    width: 400px;
+  }
   .career-1 article {
     width: 888px;
   }
@@ -1622,12 +1634,6 @@ top: 53px;
   }
   .career-head p{
     font-size: 28px;
-  }
-  .career-r{
-    font-size: 22px;
-  }
-  .page-career .left-text {
-    width: 505px;
   }
   .page-parters .parters-list>a>img{
     width: 140px;
@@ -1665,11 +1671,7 @@ top: 53px;
     height: 120px;
     margin-left: -10px;
   }
-
-  list-style: ;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;img{
+  .staff-des>li>a>img{
     width: 70px;
   }
   .staff-des div{
