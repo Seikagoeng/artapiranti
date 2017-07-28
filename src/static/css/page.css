@@ -416,7 +416,7 @@ article {
   margin: 0 auto;
   margin-bottom: 28px;
 }
-.career-head h1{
+.career-head h2{
   height: 50px;
   font-family: Roboto;
   font-size: 48px;
@@ -1050,7 +1050,7 @@ top: 53px;
 }
 .blog-head img{
   width: 100px;
-  margin-bottom: 26px;
+  margin-bottom: 10px;
 }
 .blog-head p:last-child{
   width: 346px;
@@ -1085,7 +1085,7 @@ top: 53px;
 .readMore{
   display: block;
   margin: 0 auto;
-  width: 115px;
+  width: 147px;
   height: 20px;
   font-family: Arial-MT;
   font-size: 18px;
@@ -1126,6 +1126,7 @@ top: 53px;
   width: 60px;
   display: inline-block;
   margin-right: 16px;
+  vertical-align: top;
 }
 .details-head .head-des p{
   display: inline-block;
@@ -1304,9 +1305,10 @@ top: 53px;
   color: #32eece;
 }
 .profile-content>img{
-  width: 90px;
+  width: 120px;
   margin: 10px auto;
   display: inline-block;
+  margin: 40px 0 30px 0;
 }
 .profile-content>p{
   font-family: Arial;
@@ -1324,7 +1326,8 @@ top: 53px;
 .profile-content p:nth-child(4){
   font-size: 18px;
   color: #9b9b9b;
-  margin-bottom: 13px;
+  width: 80%;
+  margin: 30px auto;
 }
 .profile-content p:nth-child(5){
   width: 650px;
@@ -1628,7 +1631,7 @@ top: 53px;
   .career-name>a>span {
     font-size: 14px;
   }
-  .career-head h1 {
+  .career-head h2 {
     height: 35px;
     font-size: 37px;
   }

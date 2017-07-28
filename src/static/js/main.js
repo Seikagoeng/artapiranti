@@ -11,8 +11,6 @@ $(function() {
     anchors: ['about', 'product', 'career', 'timeline', 'blog', 'parters', 'staffs', 'contact'],
     scrollingSpeed: 1000,
     navigation: true,
-    // slidesNavigation: false,
-    // slidesNavPosition: 'bottom',
     menu: '.nav',
     fixedElements: '.header, .footer',
     scrollOverflow: false,
@@ -55,13 +53,13 @@ $(function() {
 
 
   $("#btn1").click(function() {
-    $("#btn1,#btn2").removeClass("scrollcolor1 scrollcolor2");
+    $("#scrollbar").children().removeClass();
     $("#btn1").addClass("scrollcolor1");
     $("#btn2").addClass("scrollcolor2");
     $("#timeaxis").animate({left: 0}, 1000);
   });
   $("#btn2").click(function() {
-    $("#btn1,#btn2").removeClass("scrollcolor1 scrollcolor2");
+    $("#scrollbar").children().removeClass();
     $("#btn2").addClass("scrollcolor1");
     $("#btn1").addClass("scrollcolor2");
     $("#timeaxis").animate({left: '-1222px'}, 1000);
@@ -71,6 +69,6 @@ $(function() {
       $.fn.fullpage.moveSlideLeft();
   });
   $("#myBlog").click(function () {
-      $.fn.fullpage.moveTo(5,0);
+      $.fn.fullpage.silentMoveTo(5,0);
   });
 });
