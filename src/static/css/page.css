@@ -92,8 +92,6 @@ body {
   border-bottom: 2px solid #19b8b4;
   padding-bottom: 8px;
 }
-
-
 /*----------header end----------*/
 
 
@@ -328,7 +326,7 @@ article {
 }
 
 .product-3-1 {
-  width: 700px;
+  width: 680px;
   margin-bottom: 65px
 }
 
@@ -340,26 +338,31 @@ article {
 }
 
 .product-5-1 {
-  width: 515px;
+  width: 500px;
   margin-right: 50px;
 }
-
-.product-6-1 {
-  width: 435px;
+.product-6 .right-text{
+  margin-left: 80px;
 }
-
+.product-6-1 {
+  width: 400px;
+}
+.product-7 .wrap>main>.right-text{
+  margin-top: -20px;
+}
 .product-7-1 {
-  width: 565px;
+  width: 515px;
 }
 
 .product-8-1 {
-  width: 625px;
-  margin-top: 24px;
+  width: 555px;
+  margin-top: 70px;
+  margin-right: 40px;
 }
 
 .product-9-1 {
-  width: 565px;
-  margin-top: 25px;
+  width: 520px;
+  margin-top: 67px;
 }
 .product-10-1 {
   width: 500px;
@@ -401,6 +404,9 @@ article {
   border-radius: 10px;
   margin-left: 20px;
   margin-bottom: 20px;
+}
+.career-name>a:hover{
+  opacity: .5;
 }
 .career-name>a>span{
   font-family: Arial-MT;
@@ -1050,7 +1056,6 @@ top: 53px;
 }
 .blog-head img{
   width: 100px;
-  margin-bottom: 10px;
 }
 .blog-head p:last-child{
   width: 346px;
@@ -1060,7 +1065,7 @@ top: 53px;
   text-align: center;
   font-size: 18px;
   color: #9b9b9b;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 .blog-head span:first-child{
   font-family: Arial-MT;
@@ -1094,23 +1099,43 @@ top: 53px;
   color: #23c4af;
 }
 .readMore:hover{
-  opacity: 0.5;
+  opacity: .5;
 }
 /*--blog-details begin--*/
+.blog-details{
+  text-align: center;
+}
 .blog-details{
   background: white;
   padding-bottom: 30px;
 }
 .details-title{
-  width: 740px;
+  width: 1055px;
   height: 95px;
+  margin: 4px auto;
+  text-align: left;
+}
+.details-title span a{
+  display: inline-block;
+  font-size: 50px;
+  vertical-align: 55%;
+  color: #23c4af;
+  margin-right: 25px;
+}
+.details-title span a:hover{
+  opacity: .5;
+}
+.details-title h1{
+  display: inline-block;
+  width: 730px;
   font-family: Arial;
   font-size: 33px;
   font-weight: bold;
-  text-align: left;
   color: #23c4af;
+  text-align: left;
+  /*
   margin-left: 82px;
-  margin-top: 52px;
+  margin-top: 52px;*/
 }
 .head-des{
   width: 900px;
@@ -1182,7 +1207,7 @@ top: 53px;
   margin: 0 auto;
 }
 .parters-list>a:hover{
-  opacity: 0.5;
+  opacity: .5;
 }
 .parters-list>a{
   transition: all .3s;
@@ -1503,9 +1528,6 @@ top: 53px;
   }
   .product-3-1 {
     width: 959px;
-  }
-  .product-3-2 {
-    width: 325px;
   }
   .product-4-1 {
     width: 918px;
