@@ -43,16 +43,16 @@ $(function() {
     $.fn.fullpage.moveSlideLeft();
   });
   $(".nav>ul>li:eq(2)").click(function () {
-    $.fn.fullpage.moveTo(2,0)
+    $.fn.fullpage.moveTo(2,0);
   });
   $(".nav>ul>li:eq(3)").click(function () {
-    $.fn.fullpage.moveTo(3,0)
+    $.fn.fullpage.moveTo(3,0);
   });
   $(".nav>ul>li:eq(5)").click(function () {
-    $.fn.fullpage.moveTo(5,0)
+    $.fn.fullpage.moveTo(5,0);
   });
   $(".nav>ul>li:eq(7)").click(function () {
-    $.fn.fullpage.moveTo(7,0)
+    $.fn.fullpage.moveTo(7,0);
   });
 
   var mydate = new Date();
@@ -78,6 +78,7 @@ $(function() {
     $("#btn1").addClass("scrollcolor1");
     $("#btn2").addClass("scrollcolor2");
     $("#timeaxis").animate({left: 0}, 1000);
+    var abc=
   });
   $("#btn2").click(function() {
     $("#scrollbar").children().removeClass();
