@@ -78,7 +78,6 @@ $(function() {
     $("#btn1").addClass("scrollcolor1");
     $("#btn2").addClass("scrollcolor2");
     $("#timeaxis").animate({left: 0}, 1000);
-    var abc=
   });
   $("#btn2").click(function() {
     $("#scrollbar").children().removeClass();
