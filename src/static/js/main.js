@@ -13,7 +13,7 @@ $(function() {
     navigation: true,
     menu: '.nav',
     fixedElements: '.header, .footer',
-    scrollOverflow: false,
+    scrollOverflow: true,
     lazyloading: true,
     afterLoad: function(anchorLink, index) {
       $('.section').removeClass('pageAnim');
@@ -31,6 +31,28 @@ $(function() {
       $('.slide').removeClass('slideAnim');
       $('.slide').eq(nextSlideIndex).addClass('slideAnim');
     }
+  });
+
+  $("#allstaff").click(function () {
+      $.fn.fullpage.moveSlideLeft();
+  });
+  $("#myBlog").click(function () {
+      $.fn.fullpage.silentMoveTo(5,0);
+  });
+  $(".goBack").click(function () {
+    $.fn.fullpage.moveSlideLeft();
+  });
+  $(".nav>ul>li:eq(2)").click(function () {
+    $.fn.fullpage.moveTo(2,0)
+  });
+  $(".nav>ul>li:eq(3)").click(function () {
+    $.fn.fullpage.moveTo(3,0)
+  });
+  $(".nav>ul>li:eq(5)").click(function () {
+    $.fn.fullpage.moveTo(5,0)
+  });
+  $(".nav>ul>li:eq(7)").click(function () {
+    $.fn.fullpage.moveTo(7,0)
   });
 
   var mydate = new Date();
@@ -51,7 +73,6 @@ $(function() {
   $("#schedule-month").html(month[mydate.getMonth()]);
   $("#schedule-date").html(mydate.getDate());
 
-
   $("#btn1").click(function() {
     $("#scrollbar").children().removeClass();
     $("#btn1").addClass("scrollcolor1");
@@ -65,10 +86,8 @@ $(function() {
     $("#timeaxis").animate({left: '-1222px'}, 1000);
   });
 
-  $("#allstaff").click(function () {
-      $.fn.fullpage.moveSlideLeft();
-  });
-  $("#myBlog").click(function () {
-      $.fn.fullpage.silentMoveTo(5,0);
-  });
-});
+  // $("#timeaxis").click(function () {
+    // $("#timeaxis").mouseover(function () {
+      // alert('a');
+    // })
+  })

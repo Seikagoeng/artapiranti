@@ -81,6 +81,7 @@ body {
 
 .nav {
   float: right;
+  padding-top: 15px;
 }
 
 .nav li {
@@ -1029,12 +1030,13 @@ top: 53px;
 /*---page blog begin---*/
 .blog-container{
   height: 100%;
-  margin-top: 45px;
+  margin-top: 51px;
   background: white;
   padding-top: 15px;
   padding-bottom: 25px;
 }
 .blog-head{
+  padding-top: 10px;
   margin-bottom: 20px;
 }
 .blog-head h1{
@@ -1088,35 +1090,45 @@ top: 53px;
   margin-bottom: 26px;
 }
 .readMore{
-  display: block;
-  margin: 0 auto;
-  width: 147px;
+  display: inline-block;
   height: 20px;
   font-family: Arial-MT;
   font-size: 18px;
   font-weight: bold;
-  text-align: center;
   color: #23c4af;
 }
 .readMore:hover{
   opacity: .5;
 }
 /*--blog-details begin--*/
-.blog-details{
-  text-align: center;
-}
+
 .blog-details{
   background: white;
-  padding-bottom: 30px;
+}
+.blog1-wrap{
+  padding-top: 95px;
+}
+.blog2-wrap{
+  padding-top: 95px;
+}
+.blog3-wrap{
+  padding-top: 60px;
+}
+.detail-1{
+  height: 500px;
+}
+.detail-2{
+  height: 1600px;
+}
+.detail-3{
+  height: 500px;
 }
 .details-title{
   width: 1055px;
-  height: 95px;
-  margin: 4px auto;
+  margin: 0px auto;
   text-align: left;
 }
 .details-title span a{
-  display: inline-block;
   font-size: 50px;
   vertical-align: 55%;
   color: #23c4af;
@@ -1133,50 +1145,47 @@ top: 53px;
   font-weight: bold;
   color: #23c4af;
   text-align: left;
-  /*
-  margin-left: 82px;
-  margin-top: 52px;*/
 }
-.head-des{
+.blog3-wrap>.details-title>h1{
+  height: 85px;
+}
+.time-des{
   width: 900px;
-  margin: 0 auto;
   text-align: left;
   padding-top: 15px;
+  margin: 0 auto;
   margin-bottom: 10px;
 }
-.head-des img:hover{
+.time-des img:hover{
   opacity: .5;
 }
-.details-head .head-des img{
+.time-des img{
   width: 60px;
   display: inline-block;
   margin-right: 16px;
   vertical-align: top;
 }
-.details-head .head-des p{
+.time-des p{
   display: inline-block;
   width: 418px;
-  height: 60px;
   font-family: Arial;
   font-size: 20px;
   line-height: 1.5;
   text-align: left;
   color: #9b9b9b;
 }
-.details-head .head-des p span{
+.time-des p span{
   font-weight: bold;
 }
-.details-head .head-des p span:first-of-type{
+.time-des p span:first-of-type{
   color: #4a4a4a;
-}
-.details-head .head-des p span img{
-  width: 16px;
 }
 .blog-details article{
   width: 900px;
   margin: 0 auto;
 }
-.blog-details article h2{
+.subtitle-1{
+  font-size: 18px;
   font-weight: bold;
   color: #4a4a4a;
   text-align: left;
@@ -1188,6 +1197,40 @@ top: 53px;
   line-height: 1.39;
   text-align: justify;
   color: #9b9b9b;
+}
+/*--personal-blog begin--*/
+.blog2-wrap{
+  padding-top: 55px;
+}
+.blog2-wrap>.details-title>span>a{
+  vertical-align: initial;
+}
+
+.blog2-wrap .figure-des>img{
+  margin: 30px auto 15px auto;
+}
+.personal-blog-divider{
+  width: 1213px;
+  height: 3px;
+  background: #979797;
+  margin: 30px auto 10px auto;
+}
+.subtitle-2{
+  height: 41px;
+  font-family: Arial;
+  font-size: 33px;
+  font-weight: bold;
+  text-align: left;
+  color: #23c4af;
+}
+.blog2-wrap .time-des p{
+  padding-left: 30px;
+}
+.blog2-wrap article>span{
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  margin-top: 10px;
 }
 /*---page blog end---*/
 
@@ -1270,9 +1313,6 @@ top: 53px;
 .staff-des>li img:hover{
   opacity: .7;
 }
-.staff-des>li img{
-  transition: all .5s;
-}
 .staff-des li img{
   float: left;
   width: 100px;
@@ -1329,37 +1369,30 @@ top: 53px;
   text-align: left;
   color: #32eece;
 }
-.profile-content>img{
+.figure-des>img{
   width: 120px;
-  margin: 10px auto;
   display: inline-block;
-  margin: 40px 0 30px 0;
+  margin: 40px 0 20px 0;
 }
-.profile-content>p{
+.figure-des p{
   font-family: Arial;
 }
-.profile-content p:nth-child(2){
-  font-size: 30px;
+.figure-des>p:nth-child(2){
+  font-size: 33px;
   font-weight: bold;
   color: #4a4a4a;
 }
-.profile-content p:nth-child(3){
-  font-size: 22px;
+.figure-des>p:nth-child(3){
+  font-size: 21px;
   font-weight: bold;
   color: #23c4af;
 }
-.profile-content p:nth-child(4){
+.profile-content>p:nth-child(2){
+  font-family: Arial;
   font-size: 18px;
   color: #9b9b9b;
   width: 80%;
   margin: 30px auto;
-}
-.profile-content p:nth-child(5){
-  width: 650px;
-  height: 54px;
-  font-size: 18px;
-  color: #4a4a4a;
-  margin: 0 auto;
 }
 #myBlog{
   display: inline-block;
