@@ -73,11 +73,24 @@ $(function() {
   $("#schedule-month").html(month[mydate.getMonth()]);
   $("#schedule-date").html(mydate.getDate());
 
+
+  function getStyle(obj, name)
+  {
+    if(obj.currentStyle)
+    {
+      return obj.currentStyle[name];
+    }
+    else
+    {
+      return getComputedStyle(obj, false)[name];
+    }
+  };
+
   $("#btn1").click(function() {
     $("#scrollbar").children().removeClass();
     $("#btn1").addClass("scrollcolor1");
     $("#btn2").addClass("scrollcolor2");
-    $("#timeaxis").animate({left: 0}, 1000);
+    $("#timeaxis").animate({left: '1px'}, 1000);
   });
   $("#btn2").click(function() {
     $("#scrollbar").children().removeClass();
@@ -86,8 +99,73 @@ $(function() {
     $("#timeaxis").animate({left: '-1222px'}, 1000);
   });
 
-  // $("#timeaxis").click(function () {
-    // $("#timeaxis").mouseover(function () {
-      // alert('a');
-    // })
+/*  window.onload=function () {
+    var oTime=document.getElementById('timeaxis');
+
+    oTime.onmousedown=function (ev)
+    {
+      var oEvent=ev||event;
+      var oldPoint=oEvent.clientX;
+      var ol=this.offsetLeft;
+      var l=getStyle(oTime, 'left');
+      document.title= l;
+
+      document.onmousemove=function (ev)
+      {
+        var oEvent=ev||event;
+        var newPoint=oEvent.clientX;
+        var disX=newPoint-oldPoint;
+
+       if(parseFloat(l)>0)
+        {
+          l=1+'px';
+        }
+        else if(parseFloat(l)<-1221)
+        {
+          l=-1222+'px';
+        }
+        oTime.style.left=parseFloat(l)+disX+'px';
+      };
+      document.onmouseup=function ()
+      {
+        document.onmousemove=null;
+        document.onmouseup=null;
+      };
+
+      return false;
+
+    };
+  };*/
+
+  $("#timeaxis").mousedown(function () {
+    var oldPoint=event.pageX;
+    var l=$("#timeaxis").css("left");
+
+
+    $(document).mousemove(function () {
+      var newPoint=event.pageX;
+      var disX=newPoint-oldPoint;
+      document.title=l;
+
+      if(parseFloat($("#timeaxis").css("left"))>0){
+        // $("#timeaxis").css("left","0px")
+        $("#timeaxis").css("left",function () {
+        return 0;
+        });
+      }
+      else if(parseFloat($("#timeaxis").css("left"))<-1222){
+        // $("#timeaxis").css("left","-1224px")
+      }
+      $("#timeaxis").css("left",function (i,c) {
+        return parseFloat(l)+disX+'px';
+      });
+    });
+
+    $(document).mouseup(function () {
+      $(document).off("mousemove");
+      $(document).off("mouseup");
+    });
+    return false;
   });
+});
+

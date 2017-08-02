@@ -540,7 +540,7 @@ article {
 #timeaxis{
   position: relative;
   width: 2074px;
-  height: 248px;
+  height: 220px;
   margin-left: 227px;
 }
 .timecontainer>.headline{
@@ -643,8 +643,6 @@ article {
 .schedule{
   left: 8px;
   top: 73px;
-  width: 83px;
-  height: 12px;
   font-family: Calibre;
   font-size: 12px;
   text-align: left;
@@ -896,6 +894,11 @@ article {
   font-family: Calibre;
   font-size: 10px;
 }
+/*time-bottom begin*/
+.timeaxis-bottom{
+  width: 2100px;
+  height: 105px;
+}
 .today{
   width: 36px;
   height: 14px;
@@ -998,6 +1001,7 @@ top: 53px;
   width: 200px;
   height: 6px;
   margin: 0 auto;
+  margin-top: 22px;
 }
 #scrollbar a{
   display: block;
@@ -1236,10 +1240,10 @@ top: 53px;
 
 /*---page parters begin---*/
 .page-parters h1{
-  width: 243px;
+  width: 375px;
   height: 24px;
   font-family: Arial-MT;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: bold;
   line-height: 1;
   margin: 0 auto;
