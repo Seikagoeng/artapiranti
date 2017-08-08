@@ -74,17 +74,17 @@ $(function() {
   $("#schedule-date").html(mydate.getDate());
 
 
-  function getStyle(obj, name)
-  {
-    if(obj.currentStyle)
-    {
-      return obj.currentStyle[name];
-    }
-    else
-    {
-      return getComputedStyle(obj, false)[name];
-    }
-  };
+  // function getStyle(obj, name)
+  // {
+  //   if(obj.currentStyle)
+  //   {
+  //     return obj.currentStyle[name];
+  //   }
+  //   else
+  //   {
+  //     return getComputedStyle(obj, false)[name];
+  //   }
+  // };
 
   $("#btn1").click(function() {
     $("#scrollbar").children().removeClass();
@@ -96,7 +96,7 @@ $(function() {
     $("#scrollbar").children().removeClass();
     $("#btn2").addClass("scrollcolor1");
     $("#btn1").addClass("scrollcolor2");
-    $("#timeaxis").animate({left: '-1222px'}, 1000);
+    $("#timeaxis").animate({left: '-1287px'}, 1000);
   });
 
 /*  window.onload=function () {
@@ -137,35 +137,35 @@ $(function() {
     };
   };*/
 
-  $("#timeaxis").mousedown(function () {
-    var oldPoint=event.pageX;
-    var l=$("#timeaxis").css("left");
+  // $("#timeaxis").mousedown(function () {
+  //   var oldPoint=event.pageX;
+  //   var l=$("#timeaxis").css("left");
 
 
-    $(document).mousemove(function () {
-      var newPoint=event.pageX;
-      var disX=newPoint-oldPoint;
-      document.title=l;
+  //   $(document).mousemove(function () {
+  //     var newPoint=event.pageX;
+  //     var disX=newPoint-oldPoint;
+  //     document.title=l;
 
-      if(parseFloat($("#timeaxis").css("left"))>0){
-        // $("#timeaxis").css("left","0px")
-        $("#timeaxis").css("left",function () {
-        return 0;
-        });
-      }
-      else if(parseFloat($("#timeaxis").css("left"))<-1222){
-        // $("#timeaxis").css("left","-1224px")
-      }
-      $("#timeaxis").css("left",function (i,c) {
-        return parseFloat(l)+disX+'px';
-      });
-    });
+  //     if(parseFloat($("#timeaxis").css("left"))>0){
+  //       // $("#timeaxis").css("left","0px")
+  //       $("#timeaxis").css("left",function () {
+  //       return 0;
+  //       });
+  //     }
+  //     else if(parseFloat($("#timeaxis").css("left"))<-1222){
+  //       // $("#timeaxis").css("left","-1224px")
+  //     }
+  //     $("#timeaxis").css("left",function (i,c) {
+  //       return parseFloat(l)+disX+'px';
+  //     });
+  //   });
 
-    $(document).mouseup(function () {
-      $(document).off("mousemove");
-      $(document).off("mouseup");
-    });
-    return false;
-  });
+  //   $(document).mouseup(function () {
+  //     $(document).off("mousemove");
+  //     $(document).off("mouseup");
+  //   });
+  //   return false;
+  // });
 });
 
