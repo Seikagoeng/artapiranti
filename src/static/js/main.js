@@ -73,19 +73,6 @@ $(function() {
   $("#schedule-month").html(month[mydate.getMonth()]);
   $("#schedule-date").html(mydate.getDate());
 
-
-  // function getStyle(obj, name)
-  // {
-  //   if(obj.currentStyle)
-  //   {
-  //     return obj.currentStyle[name];
-  //   }
-  //   else
-  //   {
-  //     return getComputedStyle(obj, false)[name];
-  //   }
-  // };
-
   $("#btn1").click(function() {
     $("#scrollbar").children().removeClass();
     $("#btn1").addClass("scrollcolor1");
@@ -100,6 +87,17 @@ $(function() {
   });
 
 /*  window.onload=function () {
+    function getStyle(obj, name)
+    {
+      if(obj.currentStyle)
+      {
+        return obj.currentStyle[name];
+      }
+      else
+      {
+        return getComputedStyle(obj, false)[name];
+      }
+    };
     var oTime=document.getElementById('timeaxis');
 
     oTime.onmousedown=function (ev)
