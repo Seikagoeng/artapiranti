@@ -137,35 +137,62 @@ $(function() {
     };
   };*/
 
-  // $("#timeaxis").mousedown(function () {
-  //   var oldPoint=event.pageX;
-  //   var l=$("#timeaxis").css("left");
+/*
+  $("#timeaxis").mousedown(function () {
+    var oldPoint=event.pageX;
+    var l=$("#timeaxis").css("left");
+    var ol=$("#timeaxis").offset().left;
+
+    $(document).mousemove(function () {
+      var newPoint=event.pageX;
+      var disX=newPoint-oldPoint;
+      document.title=ol;
+
+      if ($("#timeaxis").offset().left>257) {
+        $("#timeaxis").css("left","1px");
+      }
+
+      else if($("#timeaxis").offset().left<-1030) {
+        $("#timeaxis").css("left","-1287px");
+      }
+      $("#timeaxis").css("left",parseFloat(l)+disX+'px');
+    });
+
+    $(document).mouseup(function () {
+      $(document).off("mousemove");
+      $(document).off("mouseup");
+    });
+    return false;
+  });
+*/
+/*
+  $("#timeaxis").mousedown(function () {
+    var oldPoint=event.pageX;
+    var l=$("#timeaxis").css("left");
 
 
-  //   $(document).mousemove(function () {
-  //     var newPoint=event.pageX;
-  //     var disX=newPoint-oldPoint;
-  //     document.title=l;
+    $(document).mousemove(function () {
+      var newPoint=event.pageX;
+      var disX=newPoint-oldPoint;
+      document.title=l;
 
-  //     if(parseFloat($("#timeaxis").css("left"))>0){
-  //       // $("#timeaxis").css("left","0px")
-  //       $("#timeaxis").css("left",function () {
-  //       return 0;
-  //       });
-  //     }
-  //     else if(parseFloat($("#timeaxis").css("left"))<-1222){
-  //       // $("#timeaxis").css("left","-1224px")
-  //     }
-  //     $("#timeaxis").css("left",function (i,c) {
-  //       return parseFloat(l)+disX+'px';
-  //     });
-  //   });
+      if(parseFloat($("#timeaxis").css("left"))>0){
+        $("#timeaxis").css("left","0px")
+      }
+      else if(parseFloat($("#timeaxis").css("left"))<-1287){
+        $("#timeaxis").css("left","-1287px")
+      }
 
-  //   $(document).mouseup(function () {
-  //     $(document).off("mousemove");
-  //     $(document).off("mouseup");
-  //   });
-  //   return false;
-  // });
+      $("#timeaxis").css("left",function (i,c) {
+          return parseFloat(l)+disX+'px';
+        });
+      });
+    $(document).mouseup(function () {
+      $(document).off("mousemove");
+      $(document).off("mouseup");
+    });
+    return false;
+  });
+*/
 });
 

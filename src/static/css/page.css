@@ -30,7 +30,7 @@
 }
 
 body {
-  font-family: Roboto;
+  font-family: Roboto ;
 }
 
 .gaosiBlur {
@@ -388,13 +388,14 @@ article {
   margin: 0 auto;
 }
 .career-name{
+  width: 80%;
+  margin: 0 auto;
   margin-top: 70px;
 }
 .career-name>a{
   display: inline-block;
-  width: 320px;
-  height: 40px;
-  border: 2px solid #23ebd8;
+  width: 304px;
+  border: 2px solid #32eece;
   border-radius: 10px;
   margin-left: 20px;
   margin-bottom: 20px;
@@ -432,7 +433,6 @@ article {
 .career-head p{
   font-family: Roboto;
   font-size: 36px;
-  color: #ffffff;
 }
 .career-head p img{
   width: 35px;
@@ -446,11 +446,13 @@ article {
   margin-right: 32px;
 }
 .page-career .left-text>p,
-.page-career .right-text>p{
+.page-career .right-text>p,
+.right-p{
   font-family: Arial;
   font-size: 17px;
   text-align: left;
-  color: #ffffff;
+  padding-left: 15px;
+  text-indent: -19px;
 }
 .page-career .left-text p:before,
 .page-career .right-text p:before{
@@ -483,7 +485,7 @@ article {
   height: 350px;
 }
 .ui-divider{
-  height: 395px;
+  height: 400px;
 }
 .ios-divider{
   height: 312px;
@@ -509,10 +511,14 @@ article {
   margin-top: 13px;
 }
 .sendto{
-  margin-top: 35px;
+  margin: 30px 0 0 15px;
 }
+.sendto>p:before{
+  display: none;
+}
+
 .sendto2{
-  margin-top: 22px;
+  margin-top: 20px;
 }
 .sendto p:nth-child(3){
   margin-top: 20px;
@@ -599,6 +605,7 @@ article {
   text-align: left;
   font-family: Calibre;
   font-size: 10px;
+  font-weight: 500;
 }
 .timeaxis-bg2>div:first-of-type>p{
   padding-left: 17px;
@@ -638,7 +645,7 @@ article {
 .timeaxis-info-2{
   left:375px ;
   top: -22px;
-  padding-top: 12px;
+  padding: 12px 0 0 1px;
 }
 .timeaxis-info-2>div>p{
   padding-left: 13px;
@@ -655,6 +662,9 @@ article {
 .timeaxis-info-5{
   left: 908px;
   top: -22px;
+}
+.timeaxis-info-5>div{
+  padding-left: 20px;
 }
 .timeaxis-info-6{
   left: 1126px;
@@ -956,10 +966,15 @@ top: 53px;
   left: 593px;
   top: 118px;
 }
+.timeaxis-info-b3>div,
+.timeaxis-info-b7>div,
+.timeaxis-info-b10>div{
+  margin-left: 40px;
+}
 .timeaxis-info-b3>div>p,
 .timeaxis-info-b7>div>p,
 .timeaxis-info-b10>div>p{
-  margin: -7px 0 0 4px;
+  margin-top: -4px;
 }
 .timeaxis-info-b9>div>p,
 .timeaxis-info-b11>div>p{
@@ -983,6 +998,10 @@ top: 53px;
   left: 1222px;
   top: 118px;
 }
+.timeaxis-info-b7>div{
+
+}
+
 .timeaxis-info-b8{
   left: 1373px;
   top: 118px;
@@ -1087,7 +1106,6 @@ top: 53px;
 
 .blog-content p{
   width: 1120px;
-  height: 81px;
   font-family: ArialMT;
   font-size: 24px;
   text-align: justify;
@@ -1122,8 +1140,9 @@ top: 53px;
   height: 480px;
 }
 .details-title{
-  width: 1055px;
+  width: 100%;
   margin: 0px auto;
+  padding-left: 6%;
   text-align: left;
 }
 .details-title span a{
@@ -1138,7 +1157,7 @@ top: 53px;
   display: inline-block;
   width: 730px;
   font-family: Arial;
-  font-size: 33px;
+  font-size: 34px;
   font-weight: bold;
   color: #23c4af;
   text-align: left;
@@ -1204,7 +1223,7 @@ top: 53px;
   vertical-align: 55%;
 }
 .blog2-wrap .figure-des>img{
-  margin: 30px auto 15px auto;
+  margin: 15px auto 10px auto;
 }
 .personal-blog-divider{
   width: 1213px;
@@ -1243,6 +1262,7 @@ top: 53px;
   color: white;
 }
 .page-parters .parters-list{
+  max-width: 1400px;
   margin: 0 auto;
 }
 .parters-list>a:hover{
@@ -1264,27 +1284,24 @@ top: 53px;
 
 
 /*--page-staffs begin--*/
+.page-staffs  .slide:first-of-type .wrap{
+  padding-top: 60px;
+}
 .staff{
-  margin-top: 30px;
+  width: 1400px;
+  height: 480px;
   background: white;
+  margin: 0 auto;
   padding-top: 44px;
 }
 .page-staffs h1{
   font-family: Arial-MT;
-  font-size: 34px;
-  font-weight: bold;
   font-style: italic;
-  line-height: 0.5;
-  text-align: left;
-  margin-top: 85px;
-  margin-left: 64px;
+  padding-bottom: 12px;
 }
 .staff-list{
-  width: 1440px;
-  height: 462px;
   padding-left: 54px;
-  margin: 0 auto;/*
-  margin-top: 149px;*/
+  margin: 0 auto;
 }
 .staff-list>li{
   float: left;
@@ -1311,23 +1328,17 @@ top: 53px;
   width: 100px;
 }
 .staff-list div{
-  margin-left: 13px;
-  width: 215px;
-  height: 100px;
-  text-align: left;
   float: left;
-  margin-top: -7px;
+  text-align: left;
+  margin-left: 13px;
 }
 .staff-des div p:nth-child(1){
-  width: 150px;
-  height: 20px;
   font-family: Arial-MT;
   font-weight: bold;
   font-size: 18px;
   color: #4a4a4a;
 }
 .staff-des div p:nth-child(2){
-  width: 90px;
   font-family: Arial-MT;
   font-weight: bold;
   font-size: 12px;
@@ -1338,7 +1349,6 @@ top: 53px;
   font-family: ArialMT;
   font-size: 10px;
   color: #9b9b9b;
-  margin-bottom: 10px;
 }
 .staff-des div p:nth-child(4){
   width: 135px;
@@ -1347,20 +1357,15 @@ top: 53px;
   color: #9b9b9b;
 }
 /*--profile begin--*/
+.profile{
+  padding-top: 69px;
+}
 .profile-content{
   height: 500px;
   background: white;
 }
 .profile h1{
-  width: 561px;
-  height: 40px;
   font-family: Arial;
-  font-size: 34px;
-  font-weight: bold;
-  font-style: italic;
-  line-height: 0.5;
-  text-align: left;
-  color: #32eece;
 }
 .figure-des>img{
   width: 120px;
@@ -1672,9 +1677,6 @@ top: 53px;
   }
   .career-1 article {
     width: 888px;
-  }
- .career-name>a {
-    width: 250px;
   }
   .career-name>a>span {
     font-size: 14px;
