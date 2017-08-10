@@ -40,7 +40,7 @@ $(function() {
       $.fn.fullpage.silentMoveTo(5,0);
   });
   $(".goBack").click(function () {
-    $.fn.fullpage.moveSlideLeft();
+    $.fn.fullpage.silentMoveTo(7,0);
   });
   $(".nav>ul>li:eq(2)").click(function () {
     $.fn.fullpage.moveTo(2,0);
